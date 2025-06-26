@@ -1,0 +1,11 @@
+--- a/include/bolt/Core/MCPlusBuilder.h   2025-06-13 11:54:32.000000000 +0700
++++ b/include/bolt/Core/MCPlusBuilder.h   2025-06-26 23:49:05.893475074 +0700
+@@ -82,7 +82,7 @@
+   /// We encode Index and Value into a 64-bit immediate operand value.
+   static int64_t encodeAnnotationImm(uint8_t Index, int64_t Value) {
+     if (LLVM_UNLIKELY(Value != extractAnnotationValue(Value)))
+-      report_fatal_error("annotation value out of range");
++      printf("annotation value out of range\n");
+
+     Value &= 0xff'ffff'ffff'ffff;
+     Value |= (int64_t)Index << 56;
