@@ -24,7 +24,7 @@ TERMUX_PKG_CONFLICTS="gcc, clang (<< 3.9.1-3)"
 TERMUX_PKG_BREAKS="libclang, libclang-dev, libllvm-dev"
 TERMUX_PKG_REPLACES="gcc, libclang, libclang-dev, libllvm-dev"
 TERMUX_PKG_GROUPS="base-devel"
-LLVM_PROJECTS="clang;clang-tools-extra;compiler-rt;lld;mlir;openmp;polly"
+LLVM_PROJECTS="clang;clang-tools-extra;compiler-rt;lld;mlir;openmp;polly;bolt"
 if [ $TERMUX_ARCH = "aarch64" ] || [ $TERMUX_ARCH = "x86_64" ]; then
 	LLVM_PROJECTS+=";lldb"
 fi
