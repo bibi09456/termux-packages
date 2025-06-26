@@ -1,5 +1,5 @@
---- a/include/bolt/Core/MCPlusBuilder.h   2025-06-13 11:54:32.000000000 +0700
-+++ b/include/bolt/Core/MCPlusBuilder.h   2025-06-26 23:49:05.893475074 +0700
+--- a/bolt/include/bolt/Core/MCPlusBuilder.h
++++ b/bolt/include/bolt/Core/MCPlusBuilder.h
 @@ -82,7 +82,7 @@
    /// We encode Index and Value into a 64-bit immediate operand value.
    static int64_t encodeAnnotationImm(uint8_t Index, int64_t Value) {
