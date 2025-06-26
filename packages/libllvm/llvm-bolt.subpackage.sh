@@ -5,5 +5,5 @@ bin/llvm-bolt-heatmap*
 bin/llvm-boltdiff*
 bin/merge-fdata*
 bin/perf2bolt*
-lib/libbolt*.a
+bolt/lib/libbolt*.a
 "
